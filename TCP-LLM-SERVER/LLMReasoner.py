@@ -87,7 +87,7 @@ class LLMReasoner:
         )
         self.intentionModel = "gemini-2.5-flash-lite"
         self.trajectory = None
-        
+        print("init LLM Reasoner") 
     def _count_tokens(self, contents, model: str) -> int:
         """
         Count total tokens for a Gemini request (text + images).
